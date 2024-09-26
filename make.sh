@@ -83,3 +83,8 @@ readme = "README.md"
 license = {file = "LICENSE"}
 keywords = ["sample", "setuptools", "development"]
 EOF
+
+# build the package
+pip wheel ./umqtt_package
+cd ..
+ls ${PWD}/build/umqtt*.whl
